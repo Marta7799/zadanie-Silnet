@@ -1,0 +1,173 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1168px;
+  margin: 0 auto 0;
+  padding: 0;
+}
+
+.news__main-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 1.1em;
+  margin-block: 12px 40px;
+  text-align: center;
+}
+.news__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.news__space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.news__Katowice {
+  position: relative;
+  bottom: 80px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  padding-inline: 60px;
+  top: -130px;
+  transition: transform 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.news__Katowice:hover, .news__Katowicefocus {
+  transform: scale(1.04);
+}
+.news__Chorzów {
+  position: relative;
+  bottom: 80px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  padding-inline: 60px;
+  top: -130px;
+  transition: transform 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.news__Chorzów:hover, .news__Chorzówfocus {
+  transform: scale(1.04);
+}
+.news__Sosnowiec {
+  position: relative;
+  bottom: 80px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  padding-inline: 60px;
+  top: -130px;
+  transition: transform 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.news__Sosnowiec:hover, .news__Sosnowiecfocus {
+  transform: scale(1.04);
+}
+.news__title {
+  color: #131313;
+  padding-top: 168px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  font-size: 22;
+  font-family: "Open Sans", sans-serif;
+}
+.news__text {
+  color: #131313;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16;
+  letter-spacing: 0.56px;
+  line-height: 1.71;
+  padding-block: 66px 126px;
+}
+.news__img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.news__picture-overlay {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
+.news__picture-overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 50%;
+  padding-bottom: 80%;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.news__picture-overlay__one::before {
+  background-color: #ededed;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news__picture-overlay__two::before {
+  background-color: #e54155;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news__picture-overlay__three::before {
+  background-color: #666666;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=main.css.map */
