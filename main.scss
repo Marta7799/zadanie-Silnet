@@ -1,5 +1,5 @@
-@import "./reset";
-@import "./mixins";
+@import "./css/_reset";
+@import "./css/mixins";
 
 .container {
   max-width: 320px;
@@ -17,8 +17,7 @@
 }
 .border {
   border: 1px solid #c7c7c7;
-  padding: 40px;
-  max-width: 100%;
+  padding: 20px;
 }
 
 .news {
@@ -39,6 +38,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
+    margin-top: 40px;
 
     @include tablet {
       flex-direction: row;
@@ -55,6 +56,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    height: 50%;
   }
 
   &__item {
@@ -92,25 +94,25 @@
     height: 200px;
     position: relative;
     z-index: 2;
+  } 
+  &__link {
+  text-decoration: none;
+background-color: transparent;
+  border-width: 3px;
+  padding: 14px 53px 16px;
+  font-size: 20px;
+  border: 2px solid #000;
   }
-  &__button {
-    border-color: #000;
-    background-color: transparent;
-    border-width: 3px;
-    padding: 14px 53px 16px;
-    font-size: 20px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #000;
-      color: #ededed;
-      border: none;
-    }
-    &:focus {
-      background-color: #000;
-      color: #ededed;
-    }
-  }
+}
+.news__link:hover {
+  background-color: #000;
+  color: #ededed;
+  border: none;
+}
+.news__link:focus {
+  background-color: #000;
+  color: #ededed;
+  border: none;
 }
 .news__picture-overlay {
   position: relative;
