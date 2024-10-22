@@ -29,8 +29,8 @@
 
   &__main-title {
     font-size: 39px;
-    margin-block: 12px 39px;
-    text-align: center;
+    margin-block: 12px 50px;
+    // text-align: center;
   }
 
   &__flex {
@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 40px;
+    margin-top: 50px;
 
     @include tablet {
       flex-direction: row;
@@ -79,7 +79,7 @@
   }
 
   &__text {
-    text-align: center;
+    // text-align: center;
     padding-block: 66px;
     width: 200px;
     @include tablet {
@@ -98,10 +98,11 @@
   &__link {
   text-decoration: none;
 background-color: transparent;
-  border-width: 3px;
   padding: 14px 53px 16px;
   font-size: 20px;
   border: 2px solid #000;
+  display: inline-block;
+  margin-top: 50px;
   }
 }
 .news__link:hover {
